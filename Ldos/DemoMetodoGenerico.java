@@ -35,9 +35,10 @@ public class DemoMetodoGenerico {
         }
 
         //crea un array de double                   //A
-        //Double dvals[] = {1.1,2.2,3.3,4.4,5.5};   //B
-        //if(igualArrays(num,dvlas)){               //C
-        //  sout("nums es igual a dvals");}         //D
+        Double dvals[] = {1.1,2.2,3.3,4.4,5.5};   //B
+        if (igualArrays(nums, dvals)) {
+            System.out.println("nums es igual a dvals");
+        }               
     }
 
 }
