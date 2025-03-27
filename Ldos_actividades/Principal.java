@@ -1,4 +1,4 @@
-package Ldos;
+package Ldos_actividades;
 
 public class Principal {
     public static void main(String []args){

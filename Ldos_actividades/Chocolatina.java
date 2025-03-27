@@ -1,4 +1,4 @@
-package Ldos;
+package Ldos_actividades;
 
 public class Chocolatina {
     private String marca;

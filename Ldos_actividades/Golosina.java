@@ -1,4 +1,4 @@
-package Ldos;
+package Ldos_actividades;
 
 public class Golosina {
     private String nombre;
