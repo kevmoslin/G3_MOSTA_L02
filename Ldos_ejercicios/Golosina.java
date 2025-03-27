@@ -24,4 +24,8 @@ public class Golosina {
     public void setPeso(double peso){
         this.peso = peso;
     }
+
+    public String toString(){
+        return "Golosina Nombre: " + nombre + "Golosina Peso: " + peso;
+    }
 }

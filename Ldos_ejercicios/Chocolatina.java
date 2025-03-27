@@ -14,4 +14,8 @@ public class Chocolatina {
     public void setMarca(String marca){
         this.marca = marca;
     }
+
+    public String toString() {
+        return "Chocolatina Marca: " + marca;
+    }
 }
