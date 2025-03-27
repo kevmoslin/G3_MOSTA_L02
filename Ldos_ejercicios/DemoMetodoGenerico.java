@@ -30,6 +30,12 @@ public class DemoMetodoGenerico {
         Integer nums3[] = {1,2,3,4,5};
         Integer nums4[] = {1,2,3,4,5};
 
+        String[] v = {"Perez", "Sanchez", "Rodriguez"};
+        Integer[] w = {12, 34, 56};
+
+        System.out.println(exist(v, "Sanchez"));
+        System.out.println(exist(w, 34));
+
         if (igualArrays(nums, nums)) {
             System.out.println("nums es igual a nums");
         }
