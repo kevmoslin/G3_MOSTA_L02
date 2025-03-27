@@ -6,13 +6,14 @@ public class Bolsa < T > implements Iterable < T > {
     private ArrayList < T > lista;
     private int tope;
 
-    public Bolsa(){
+    public Bolsa() {
         this.lista = new ArrayList<>();
+        this.tope = 10;  
     }
     
     public Bolsa(int tope) {
-        super();
-        this.tope = 5;
+        this.tope = tope;  
+        this.lista = new ArrayList<>();
     }
 
     public void add(T objeto){
