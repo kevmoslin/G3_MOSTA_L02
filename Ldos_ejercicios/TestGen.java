@@ -1,4 +1,5 @@
 package Ldos_ejercicios;
+import Ldos_ejercicios.DemoMetodoGenerico;
 
 public class TestGen {
     public static void main(String []args){
