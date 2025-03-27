@@ -22,7 +22,7 @@ public class cajoneria<T> {
     }
 
     public T delete(T elemento){
-        for(int = 0; i < lista.size(); i++){
+        for (int i = 0; i < lista.size(); i++) {
             if (lista.get(i).getContenido().equals(elemento)) {
                 return lista.remove(i).getContenido();
             }
@@ -30,7 +30,11 @@ public class cajoneria<T> {
         return null;
     }
 
-    
-
-
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < lista.size(); i++) {
+            sb.append("Posición ").append(i).append(": ").append(lista.get(i).toString()).append("\n");
+        }
+        return sb.toString();
+    }
 }
