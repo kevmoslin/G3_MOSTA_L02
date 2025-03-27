@@ -19,13 +19,8 @@ public class Principal {
         bolsaCho.add(c1);
         bolsaCho.add(c2);
 
-        for (Chocolatina chocolatina: bolsaCho){
-            System.out.println(chocolatina.getMarca());
-        }
+        bolsaCho.mostrarContenido();
+        bolsaGo.mostrarContenido();
 
-        for (Golosina golosina: bolsaGo){
-            System.out.println(golosina.getNombre());
-            System.out.println(golosina.getPeso());
-        }
     }
 }
