@@ -1,36 +1,21 @@
 package Ldos_ejercicios;
 
 public class TestGen {
-    public static void main(String []args){
-        Integer nums[] = {1,2,3,4,5};
-        Integer nums2[] = {1,2,3,4,5};
-        Integer nums3[] = {1,2,3,4,5};
-        Integer nums4[] = {1,2,3,4,5};
+    public static void main(String[] args) {
+        // Crear cajoneria para Golosinas
+        cajoneria<Golosina> cajoneriaGolosinas = new cajoneria<>();
 
-        String[] v = {"Perez", "Sanchez", "Rodriguez"};
-        Integer[] w = {12, 34, 56};
+        Golosina g1 = new Golosina("Caramelo", 10);
+        Golosina g2 = new Golosina("Chicle", 5);
+        Golosina g3 = new Golosina("Gomita", 15);
+        Golosina g4 = new Golosina("Mazapán", 20);
+        Golosina g5 = new Golosina("Turrón", 25);
 
-        System.out.println(DemoMetodoGenerico.exist(v, "Sanchez"));
-        System.out.println(DemoMetodoGenerico.exist(w, 34));
-        System.out.println(DemoMetodoGenerico.exist(w,"Salas"));
+        cajoneriaGolosinas.addCaja(new caja<>("Rojo", g1));
+        cajoneriaGolosinas.addCaja(new caja<>("Azul", g2));
+        cajoneriaGolosinas.addCaja(new caja<>("Verde", g3));
+        cajoneriaGolosinas.addCaja(new caja<>("Amarillo", g4));
+        cajoneriaGolosinas.addCaja(new caja<>("Blanco", g5));
 
-        if (DemoMetodoGenerico.igualArrays(nums, nums)) {
-            System.out.println("nums es igual a nums");
-        }
-        if (DemoMetodoGenerico.igualArrays(nums, nums2)) {
-            System.out.println("nums es igual a nums2");
-        }
-        if (DemoMetodoGenerico.igualArrays(nums, nums3)) {
-            System.out.println("nums es igual a nums3");
-        }
-        if (DemoMetodoGenerico.igualArrays(nums, nums4)) {
-            System.out.println("nums es igual a nums4");
-        }
-
-        /*crea un array de double                   //A
-        Double dvals[] = {1.1,2.2,3.3,4.4,5.5};   //B
-        if (igualArrays(nums, dvals)) {
-            System.out.println("nums es igual a dvals");
-        }   */            
     }
 }
