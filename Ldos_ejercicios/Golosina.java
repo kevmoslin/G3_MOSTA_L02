@@ -25,6 +25,19 @@ public class Golosina {
         this.peso = peso;
     }
 
+    public boolean equals(Object objeto){
+        if (this == objeto) {
+            return true;
+        }
+
+        if (objeto == null || getClass() != objeto.getClass()) {
+            return false;
+        }
+
+        Golosina golosina = (Golosina) objeto;
+        return Double.compare(golosina.peso, peso) == 0 && nombre.equals(golosina.nombre);
+    }
+
     public String toString(){
         return nombre + " (" + peso + "g)";
     }
