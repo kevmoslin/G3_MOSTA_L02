@@ -26,4 +26,10 @@ public class Bolsa < T > implements Iterable < T > {
     public Iterator < T > iterator(){
         return lista.iterator();
     }
+
+    public static < T > mostrarContenido(Bolsa<T> bolsa){
+        for(T item : bolsa.getElementos()){
+            System.out.println(item);
+        }
+    }
 }
