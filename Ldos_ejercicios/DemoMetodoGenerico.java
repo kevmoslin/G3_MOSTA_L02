@@ -35,6 +35,7 @@ public class DemoMetodoGenerico {
 
         System.out.println(exist(v, "Sanchez"));
         System.out.println(exist(w, 34));
+        System.out.println(exist(w,"Salas"));
 
         if (igualArrays(nums, nums)) {
             System.out.println("nums es igual a nums");
