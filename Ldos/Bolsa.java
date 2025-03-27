@@ -12,7 +12,7 @@ public class Bolsa < T > implements Iterable < T > {
     
     public Bolsa(int tope) {
         super();
-        this.tope = tope;
+        this.tope = 5;
     }
 
     public void add(T objeto){
