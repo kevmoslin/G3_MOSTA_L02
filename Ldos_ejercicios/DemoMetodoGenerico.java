@@ -13,16 +13,15 @@ public class DemoMetodoGenerico {
             }
         }
         return true;
-    
-    static <T> boolean exits(T[] array, T elemento){
-        for (T item: array){
-            if (item.equals(elemento)){
+    }
+
+    static <T> boolean exist(T[] array, T elemento) {
+        for (T item : array) {
+            if (item.equals(elemento)) {
                 return true;
             }
         }
         return false;
-    }
-    
     }
 
     public static void main(String []args){
