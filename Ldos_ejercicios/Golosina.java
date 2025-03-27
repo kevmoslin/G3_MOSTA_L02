@@ -26,6 +26,6 @@ public class Golosina {
     }
 
     public String toString(){
-        return "Golosina Nombre: " + nombre + "Golosina Peso: " + peso;
+        return nombre + " (" + peso + "g)";
     }
 }
