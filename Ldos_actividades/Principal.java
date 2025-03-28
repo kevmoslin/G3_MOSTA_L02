@@ -2,8 +2,8 @@ package Ldos_actividades;
 
 public class Principal {
     public static void main(String []args){
-        Bolsa < Chocolatina > bolsaCho = new Bolsa < Chocolatina > ();
-        Bolsa < Golosina > bolsaGo = new Bolsa < Golosina > ();
+        Bolsa < Chocolatina > bolsaCho = new Bolsa < Chocolatina > (3);
+        Bolsa < Golosina > bolsaGo = new Bolsa < Golosina > (3);
 
         Golosina g = new Golosina("tuyo", 5);
         Golosina g2 = new Golosina("ole ole", 4);
